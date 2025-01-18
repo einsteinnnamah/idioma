@@ -5,7 +5,7 @@ import { useEffect } from 'react'
 
 export default function Home() {
   useEffect(() => {
-    // Removed registerServiceWorker since ./pwa module is not found
+    // Any initialization logic can go here
   }, [])
 
   return (
@@ -26,7 +26,7 @@ export default function Home() {
       {/* Action Buttons */}
       <div className="w-full max-w-sm space-y-4 mb-6">
         <Link 
-          href="/signup" 
+          href="/auth/signup" 
           className="w-full bg-black text-white py-4 rounded-full flex items-center justify-center font-medium"
         >
           Create An Account
@@ -34,7 +34,7 @@ export default function Home() {
 
         <div className="text-center">
           <span className="text-gray-500">Already have an account? </span>
-          <Link href="/login" className="text-black font-medium">
+          <Link href="/auth/login" className="text-black font-medium">
             Login
           </Link>
         </div>
